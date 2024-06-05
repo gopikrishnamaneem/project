@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<style>
+    *{
+     margin: 0;
+     padding: 0;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .nav{
+        height: 15vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+    }
+    .details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+       
+    }
+    .villa{
+        width: 20%;
+        font-size: 25px;
+        margin-left: 5%;
+    }
+    .details{
+        width: 60%;
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        margin-right: 5%;
+        
+    }
+    .iconcolor{
+        color: white;
+        background-color: black;
+        height: 30px;
+        border-radius: 40%;
+    }
+    .sch{
+        color: white;
+        background-color: orangered;
+        align-items: center;
+        border-radius: 20%;
+        height: 20%;
+    }
+    .section2{
+     width: 100%;
+     height: 100vh;
+     background-image: url(./multimedia/images/banner-01.jpg);
+     background-size: cover;
+     align-content: center;
+    }
+    .content{
+        color: white;
+        padding-left: 5%;
+        line-height: 40px;
+    }
+    .content h1{
+        font-size: 40px;
+    }
+    .content p{
+        background-color: white;
+        color: black;
+        width: 8%;
+        height: 2%;
+        align-items: center;
+       
+    }
+    .content p i{
+        color: orangered;
+        font-style: normal;
+    }
+   .section3{
+   width: 100%;
+   height: 80vh;
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  gap: 1%;
+   }
+   .section3-1{
+    width: 25%;
+    height: 80%;
+    /* border: 1px solid black; */
+   }
+   .section3-1 img{
+    height: 80%;
+    width: 100%;
+   }
+   .section3-2{
+    width: 40%;
+    height: 80%;
+    /* border: 1px solid black; */
+   }
+   .section3-2 h1{
+    padding-top: 3%;
+   }
+   .section3-2 p{
+    margin-top: 7%;
+   }
+  
+   .section3-2 .orange{
+    color: orangered;
+   }
+   .section3-2 .ppp{
+    background-color: rgb(250, 248, 248);
+   }
+   .section3-3{
+    width: 25%;
+    height: 80%;
+    /* border: 1px solid black; */
+   }
+   .section3-3 .section3-a{
+    height: 19%;
+    width: 100%;
+    /* border: 1px solid black; */
+   }
+   .section3-3 .section3-a .info1{
+    height: 50%;
+    width: 50%;
+    margin: 5%;
+    display: flex;
+    gap: 10%;
+   }
+   @media screen and (min-width: 200px) and (max-width: 900px), screen and (max-height: 700px) {
+    .section3{
+   width: 100%;
+   height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  gap: 1%;
+   }
+   .section3-1{
+    width: 25%;
+    height: 80%;
+    /* border: 1px solid black; */
+   }
+   .section3-1 img{
+    height: 70vh;
+    width: 100%;
+   }
+   .section3-2{
+    width: 40%;
+    height: 100vh;
+    
+    /* border: 1px solid black; */
+   }
+   .section3-2 h1{
+    font-size: x-large;
+    padding-top: 3%;
+   }
+   .section3-2 p{
+   line-height: 90%;
+   
+   }
+  
+   .section3-2 .orange{
+    color: orangered;
+   }
+   .section3-2 .ppp{
+    background-color: rgb(250, 248, 248);
+   }
+   .section3-3{
+    width: 25%;
+    height: 80%;
+    /* border: 1px solid black; */
+   }
+   .section3-3 .section3-a{
+    height: 19%;
+    width: 100%;
+    /* border: 1px solid black; */
+   }
+   .section3-3 .section3-a .info1{
+    height: 50%;
+    width: 50%;
+    margin: 5%;
+    display: flex;
+    gap: 10%;
+   }
+   h1{
+    font-size: small;
+   }
+   }
+   .section4{
+    height: 100vh;
+    width: 95%;
+    background-image: url(./multimedia/images/video-bg.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    margin-right: 5%;
+   }
+  
+   .section4 .vimg{
+    height: 40vh;
+    width: 65%;
+    border: 1px solid brown;
+    margin-top: 25%;
+   }
+   .section4 .vimg img{
+    height: 100%;
+    width: 100%;
+   }
+   @media screen and (min-width: 200px) and (max-width: 900px), screen and (max-height: 700px) {
+    .section4{
+    height: 100vh;
+    width: 95%;
+    background-image: url(./multimedia/images/video-bg.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+   }
+  
+   .section4 .vimg{
+    height: 40vh;
+    width: 65%;
+    border: 1px solid brown;
+    margin-top: 25%;
+   }
+   .section4 .vimg img{
+    height: 100%;
+    width: 100%;
+   }
+   }
+ .section5{
+height: 15vh;
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+ }
+ .section5-1{
+   height: 60%;
+   width: 15%;
+   /* border: 1px solid red; */
+   background-color: rgb(220, 203, 209);
+ }
+.section5 .name{
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+}
+.section5-1 .orange{
+    color: orangered;
+}
+@media screen and (min-width: 200px) and (max-width: 900px), screen and (max-height: 700px){
+    .section5{
+height: 25vh;
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+margin-top: 5%;
+ }
+ .section5-1{
+   height: 60%;
+   width: 30%;
+   /* border: 1px solid red; */
+   background-color: rgb(220, 203, 209);
+ }
+.section5 .name{
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+}
+.section5-1 .orange{
+    color: orangered;
+}  
+}
+ .section6{
+    height: 15vh;
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 5%;
+   
+   
+ } 
+ .section6-1{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+   
+ }
+ .section6-2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10%;
+    margin-right: 2%;
+    margin-top: 2%;
+ }
+ .section6-2 p{
+    width: 150px;
+    height: 40%;
+    background-color: black;
+    text-align: center;
+    color: white;
+   
+    
+ }
+ .section6-2 .orange{
+    background-color: orangered;
+ }
+ @media screen and (min-width:200px) and (max-width: 1000px), screen and (max-height: 700px) {
+    .section6{
+    height: 30vh;
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 5%;
+   
+   
+ } 
+ .section6-1{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+   
+ }
+ .section6-2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10%;
+    margin-right: 2%;
+    margin-top: 2%;
+ }
+ .section6-2 p{
+    width: 150px;
+    height: 50%;
+    background-color: black;
+    text-align: center;
+    color: white;
+   
+    
+ }
+ .section6-2 .orange{
+    background-color: orangered;
+ }
+ .section6-1 div h1{
+    font-size: small;
+ }
+ }
+.section7{
+    height: 60vh;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+}
+.section7 div{
+    height: 50vh;
+    width: 20%;
+    border: 1px solid black;
+}
+div .section7-a{
+    height: 40vh;
+    width: 100%;
+}
+.section7-a .section7-b{
+    height: 20%;
+    width: 100%;
+}
+.section7-b{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section7-b p{
+    color: rgb(201, 196, 196)
+}
+.section7-1{
+    height: 100%;
+    width: 30%
+    ;
+}
+.living_room_img{
+    width: 100%;
+    height: 100%;
+}
+.p1{
+    color: gray;
+}
+@media screen and (min-width: 200px) and (max-width: 800px), screen and (max-height: 700px) {
+    .section7{
+    height: 60vh;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+}
+.section7 div{
+    height: 50vh;
+    width: 20%;
+    border: 1px solid black;
+}
+div .section7-a{
+    height: 40vh;
+    width: 100%;
+}
+.section7-a .section7-b{
+    height: 20%;
+    width: 100%;
+}
+.section7-b{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section7-b p{
+    color: rgb(201, 196, 196)
+}
+.section7-1{
+    height: 100%;
+    width: 30%
+    ;
+}
+.living_room_img{
+    width: 100%;
+    height: 100%;
+}
+.p1{
+    color: gray;
+} 
+}
+.section8{
+    height: 25vh;
+    border: 1px solid black;
+    align-content: center;
+    text-align: center;
+}
+@media screen and (min-width: 200px) and (max-width: 800px ) {
+    .section8{
+    height: 25vh;
+    font-size: small;
+    border: 1px solid black;
+    align-content: center;
+    text-align: center;
+}
+}
+.section9{
+    height: 50vh;
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.section9-1{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-left: 5%; */
+}
+.section9-1 .img1{
+    height: 100%;
+    width: 30%;
+      /* border: 1px solid black; */
+}  
+.section9img{
+    height: 70%;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+.section9img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
+.section9img2{
+    height: 30%;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.names{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.names h4{
+    color: orangered;
+    font-weight: bold;
+    font-size: x-large;
+}
+h3{
+    margin-top: 2%;
+}
+@media screen and (min-width:200px) and (max-width:800px),screen and (max-height:700px) {
+    .section9{
+    height: 100vh;
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.section9-1{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-left: 5%; */
+}
+.section9-1 .img1{
+    height: 100%;
+    width: 30%;
+      /* border: 1px solid black; */
+}  
+.section9img{
+    height: 70%;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+.section9img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
+.section9img2{
+    height: 30%;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.names{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.names h4{
+    color: orangered;
+    font-weight: bold;
+    font-size: small;
+}
+h3{
+    margin-top: 2%;
+}
+}
+.section10{
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-right: 5%;
+    background-image: url(./multimedia/images/contact-bg.jpg);
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center; 
+    position: relative;
+  
+}
+
+
+.section10-1{
+height: 70vh;
+width: 70%;
+/* border: 1px solid blue; */
+display: flex;
+justify-content: space-between;
+margin: 20%;
+
+position: absolute;
+top: 3%;
+}
+.section10-a{
+    height: 50vh;
+    width: 55%;
+    /* border: 1px solid yellow; */
+}
+.section10-a img{
+    height: 100%;
+    width: 100%;
+}
+.section10-b{
+    height: 70vh;
+    width: 30%;
+    background-color: white;
+    /* border: 1px solid yellow; */
+}
+@media screen and (min-width:200px) and (max-width:800px),screen and (max-height:700px) {
+    .section10{
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-right: 5%;
+    background-image: url(./multimedia/images/contact-bg.jpg);
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center; 
+    position: relative;
+  
+}
+
+
+.section10-1{
+height: 100vh;
+width: 70%;
+/* border: 1px solid blue; */
+display: block;
+justify-content: space-between;
+margin: 20%;
+
+position: absolute;
+top: 9%;
+}
+.section10-a{
+    height: 30vh;
+    width: 55%;
+    /* border: 1px solid yellow; */
+}
+.section10-a img{
+    height: 100%;
+    width: 100%;
+}
+.section10-b{
+    height: 40vh;
+    width: 30%;
+    background-color: white;
+    /* border: 1px solid yellow; */
+}
+
+}
+
+
+</style>
+</head>
+<body>
+    <div class="nav">
+        <div class="villa"><b>Villa</b></div>
+        <div class="details">
+            <div class="home">home</div>
+            <div>properties</div>
+            <div>property details</div>
+            <div>contactus</div>
+            <div class="icon" ><ion-icon class="iconcolor" name="calendar-number-outline"></ion-icon>
+            <p class="sch">Schedule a visit</p></div>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="content">
+            <p>Toronto,<i>Canada</i></p>
+            <h1>HURRY!</h1>
+            <h1>GET THE BEST</h1>
+            <h1>VILLA FOR YOU</h1>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="section3-1"><img src="./multimedia/images/propic2.jpg" alt=""></div>
+        <div class="section3-2">
+            <h1>BEST</h1>
+            <h1>Appartment&</h1>
+            <h1>Sea View</h1>
+            <div class="ppp">
+            <p class="orange">Best useful links?</p>
+            <p>Get the best here with in the best amount best villa at low cost
+                Get the best here with in the best amount best villa at low cost
+                Get the best here with in the best amount best villa at low cost </p>
+            <p>How does this work?</p>
+            <p>Why is villa agency is best?</p>
+        </div>
+        </div>
+        <div class="section3-3">
+            <div class="section3-a">
+                <div class="info1">
+                    <div>
+                    <img src="./multimedia/images/info-icon-01.png" alt="">
+                    </div>
+                    <div>
+                        <h1>250 m2</h1>
+                        <p>total flat space</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section3-a">
+                <div class="info1">
+                    <div>
+                    <img src="./multimedia/images/info-icon-02.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Contract</h1>
+                        <p>contact ready</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section3-a">
+                <div class="info1">
+                    <div>
+                    <img src="./multimedia/images/info-icon-03.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Payment</h1>
+                        <p>payment process</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section3-a">
+                <div class="info1">
+                    <div>
+                    <img src="./multimedia/images/info-icon-04.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Safety</h1>
+                        <p>24/7Undercontrol</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="vimg">
+            <img src="./multimedia/images/video-frame.jpg" alt="">
+        </div>
+    </div>
+    <div class="section5">
+        <div class="section5-1 name">
+            <div class="orange"><h1>34</h1></div>
+            <p>Building <br>Finshed now</p>
+        </div>
+        <div class="section5-1 name">
+            <div class="orange"><h1>12</h1></div>
+            <p>Years<br>Experience</p>
+        </div>
+        <div class="section5-1 name">
+            <div class="orange"><h1>24</h1></div>
+            <p>Awaards <br>Win 2023</p>
+        </div>
+    </div>
+    <div class="section6">
+         <div class="section6-1">
+            <div><h1>Find Your Best Deal<br>Right Now!</h1></div>
+            <div class="section6-2">
+                <p class="orange">Apartment</p>
+                <p>Villahouse</p>
+                <p>Penthouse</p>
+            </div>
+         </div>
+    </div>
+    </div>
+    <div class="section7">
+        <div class=".section7-1">
+            <div class="section7-a">
+             <div class="section7-b">
+              <p>Total Flat Space</p>
+              <h3>185 m2</h3>
+             </div>
+             <div class="section7-b">
+                <p>Floor Number</p>
+                <h3>26th</h3>
+               </div>
+               <div class="section7-b">
+                <p>Number of rooms</p>
+                <h3>4</h3>
+               </div>
+               <div class="section7-b">
+                <p>Parking Avialable</p>
+                <h3>Yes</h3>
+               </div>
+               <div class="section7-b">
+                <p>Payment Process</p>
+                <h3>Bank</h3>
+               </div>
+             
+            </div>
+        </div>
+        <div class=".section7-1">
+          <img class="living_room_img" src="./multimedia/images/deal-01.jpg" />
+        </div>
+        <div class=".section7-3">
+        <h4>Extra Info about Property</h4><br><br>
+        <p class="p1">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+             by injected humour, or randomised words which don't look
+              even slightly believable.</p><br><br>
+              <p class="p1">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+             by injected humour, or randomised words which don't look
+              even slightly believable.
+              </p>
+        </div>
+    </div>
+    <div class="section8">
+      <h1>We Provide The<br>Best Property You<br>Like</h1>
+    </div>
+    <div class="section9">
+    <div class="section9-1">
+    <div class="img1">
+        <div class="section9img">
+         <img src="./multimedia/images/property-01.jpg" alt="">
+        </div>
+        <div class="section9img2">
+            <div class="names">
+                <p>Luxury Villa</p>
+                <h4>$2.264.000</h4>
+            </div>
+            <h3>18 New Street Miami or 97512 </h3>
+
+        </div>
+    </div>
+    <div class="img1">
+        <div class="section9img">
+         <img src="./multimedia/images/property-02.jpg" alt="">
+        </div>
+        <div class="section9img2">
+            <div class="names">
+                <p>Luxury Villa</p>
+                <h4>$2.264.000</h4>
+            </div>
+            <h3>18 New Street Miami or 97512 </h3>
+
+        </div>
+    </div>
+    <div class="img1">
+        <div class="section9img">
+         <img src="./multimedia/images/property-03.jpg" alt="">
+        </div>
+        <div class="section9img2">
+            <div class="names">
+                <p>Luxury Villa</p>
+                <h4>$2.264.000</h4>
+            </div>
+            <h3>18 New Street Miami or 97512 </h3>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="section10">
+         <!-- <h1>Get In Touch With<br>Our Agents</h1> -->
+         <div> <div class="section10-1">
+            <div class="section10-a"><img src="./multimedia/images/map.jpg" alt=""></div>
+            <div class="section10-b">
+                <form action="">
+                    <label for="FullName">FullName</label><br><br>
+                    <input type="text" id="FullName" name="FullName" placeholder="yourname"><br><br>
+                    <label for="email">EmailAddress</label><br><br>
+                    <input type="text" id="email" name="email" placeholder="youremail"><br><br>
+                    <label for="Subject">Subject</label><br><br>
+                    <input type="text" id="Subject" name="Subject" placeholder="subject"><br><br>
+                    <label for="message">Message</label><br><br>
+                    <textarea name="message" id="message" width="30%" rows="8"></textarea><br><br><br><br>
+                    <input type="submit" value="send message">
+                   
+                </form>
+            </div>
+         </div>
+        </div>
+        
+    
+    </div>
+   
+</body>
+</html>
